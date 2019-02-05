@@ -1,0 +1,15 @@
+<div class="jumbotron jumbotron-fluid text-center main-jumbotron">
+    <h1>Videos</h1>
+    <p>You have <b>{{this.model.length}}</b> video(s) in your library.</p>
+</div>
+<div class="row">
+    {{#if this.model.isPending}}
+    Loading...
+    {{else}}
+        {{#each this.model as |video|}}
+        <div class="col-sm-4">
+            {{video-thumbnail video=video}}
+        </div>
+        {{/each}}
+    {{/if}}
+</div>

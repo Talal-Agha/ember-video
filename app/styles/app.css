@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+  font: 400 15px Lato, sans-serif;
+  line-height: 1.8;
+  color: #818181;
+}
+.main-jumbotron {
+  background-color: #f4511e;
+  color: #fff;
+  padding: 100px 25px;
+  font-family: Montserrat, sans-serif;
+}
+.video-thumbnail{
+    box-shadow: 5px 0px 40px rgba(0, 0, 0, .2);
+    transition: all 0.5s;
+    background: #fff;
+}
+.video-thumbnail:hover {
+  box-shadow: 5px 0px 40px rgba(0, 0, 0, .1);
+}
+.video-thumbnail img {
+  width: 100%;
+}
+.video-thumbnail .content{
+  padding:5px;
+}
+.video-thumbnail a,
+.video-thumbnail h2 {
+  color:black;
+  font-size: 18px;
+}
+.video-thumbnail a:hover,
+.video-thumbnail h2:hover {
+    text-decoration:none;
+    color: #f4511e;
+}
